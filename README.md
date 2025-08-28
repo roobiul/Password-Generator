@@ -30,7 +30,7 @@ A modern, elegant password generator with a soft UI design featuring neumorphic 
 
 ## 📸 Screenshots
 
-*(https://github.com/roobiul/Password-Generator/blob/e883bbaaf6ccdcc472a767af97f846e91eaa36b6/Screenshot%20.png)*
+![Screenshots](https://github.com/roobiul/Password-Generator/blob/main/Screenshot%20.png)
 
 ## 🛠️ Technologies Used
 
