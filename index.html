@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator By Robiul</title>
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="icon-container">
+            <div class="key-icon">
+                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+                </svg>
+            </div>
+        </div>
+        
+        <h1>Custom Password Generator</h1>
+        
+        <div class="password-display">
+            <input type="text" id="passwordOutput" readonly placeholder="Generated password will appear here">
+            <button class="copy-btn" onclick="copyPassword()">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="strength-indicator">
+            <span>Password Strength:</span>
+            <div class="strength-bar">
+                <div class="strength-fill" id="strengthFill"></div>
+            </div>
+            <span id="strengthText">None</span>
+        </div>
+
+        <div class="options">
+            <div class="option-group">
+                <label for="length">Password Length: <span id="lengthValue">12</span></label>
+                <input type="range" id="length" min="4" max="32" value="12" oninput="updateLength()">
+            </div>
+
+            <div class="checkbox-grid">
+                <div class="checkbox-column">
+                    <label class="checkbox-container">
+                        <span>Uppercase Letters</span>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="uppercase" checked>
+                            <div class="checkbox-slider"></div>
+                        </div>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <span>Lowercase Letters</span>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="lowercase" checked>
+                            <div class="checkbox-slider"></div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="checkbox-column">
+                    <label class="checkbox-container">
+                        <span>Numbers</span>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="numbers" checked>
+                            <div class="checkbox-slider"></div>
+                        </div>
+                    </label>
+
+                    <label class="checkbox-container">
+                        <span>Symbols</span>
+                        <div class="checkbox-wrapper">
+                            <input type="checkbox" id="symbols">
+                            <div class="checkbox-slider"></div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="custom-text-section" id="customTextSection">
+                <label for="customText">Include Custom Text:</label>
+                <input type="text" id="customText" placeholder="Enter text to include in password">
+            </div>
+        </div>
+
+        <button class="generate-btn" onclick="generatePassword()">Generate Password</button>
+    </div>
+
+    <footer>
+        <p>Developed by MD ROBIUL ISLAM, CSE, JSTU</p>
+        <script type="text/javascript">
+            atOptions = {
+                'key': 'acb20ab1d7b09fdc3a0b243e48228eab',
+                'format': 'iframe',
+                'height': 90,
+                'width': 728,
+                'params': {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/acb20ab1d7b09fdc3a0b243e48228eab/invoke.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
+</body>  
+</html>
