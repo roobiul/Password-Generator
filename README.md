@@ -26,7 +26,7 @@ A modern, elegant password generator with a soft UI design featuring neumorphic 
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://roobiul.github.io/Password-Generator/) *(Add your deployed link here)*
+[View Live Demo](https://roobiul.github.io/Password-Generator/)
 
 ## 📸 Screenshots
 
